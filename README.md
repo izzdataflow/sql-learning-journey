@@ -1,51 +1,64 @@
 # 🗄️ SQL Self-Learning Journey
 
-## Progress Tracker
+> **SQL Server · T-SQL · 39 Topics · Data Analyst Track**
+> Click any topic in the table to jump straight to the material.
+
+---
+
+## 📋 Progress Tracker
 
 | # | Topic | Status |
 |---|-------|--------|
-| 1 | Filtering & Aggregation — WHERE, GROUP BY, HAVING, TOP | ✅ Done |
-| 2 | DDL — CREATE, ALTER, DROP TABLE | ✅ Done |
-| 3 | DML — INSERT, UPDATE, DELETE, TRUNCATE | ✅ Done |
-| 4 | Filtering Operators — AND, OR, NOT, BETWEEN, IN, LIKE | ✅ Done |
-| 5 | JOINs — INNER, LEFT, RIGHT, FULL | ✅ Done |
-| 6 | Advanced JOINs — NULL Filtering & CROSS JOIN | ✅ Done |
-| 7 | Multi-Table JOINs (3+ Tables) | ✅ Done |
-| 8 | Set Operators — UNION, UNION ALL, INTERSECT, EXCEPT | ✅ Done |
-| 9 | String Functions — CONCAT, LOWER, UPPER, TRIM, REPLACE, LEN, LEFT, RIGHT, SUBSTRING | ✅ Done |
-| 10 | Math Functions — ROUND, ABS | ✅ Done |
-| 11 | Date Functions — DATETRUNC, EOMONTH, DATEPART, DATENAME, YEAR, MONTH, DAY | ✅ Done |
-| 12 | Date Formatting & Type Conversion — FORMAT, CONVERT, CAST | ✅ Done |
-| 13 | Date Arithmetic — DATEADD, DATEDIFF, ISDATE | ✅ Done |
-| 14 | NULL Handling — COALESCE, NULLIF, IS NULL | ✅ Done |
-| 15 | Data Quality & Cleaning — DATALENGTH, TRIM, Policy Patterns | ✅ Done |
-| 16 | CASE WHEN — Conditional Logic & Conditional Aggregation | ✅ Done |
-| 17 | Aggregate Functions — COUNT, SUM, AVG, MAX, MIN | ✅ Done |
-| 18 | Window Functions — SUM OVER, RANK OVER, ROWS BETWEEN | ✅ Done |
-| 19 | Window Functions — COUNT, AVG, MIN, MAX OVER (Real Project Patterns) | ✅ Done |
-| 20 | Window Functions — ROW_NUMBER, RANK, DENSE_RANK, NTILE, CUME_DIST | ✅ Done |
-| 21 | Window Functions — LAG, LEAD, FIRST_VALUE (Advanced Patterns) | ✅ Done |
-| 22 | Schema Exploration — INFORMATION_SCHEMA | ✅ Done |
-| 23 | Subqueries — FROM, SELECT, WHERE, IN, ANY, EXISTS | ✅ Done |
-| 24 | CTEs — Standalone, Chained & Recursive | ✅ Done |
-| 25 | Views — CREATE, DROP, JOIN Views | ✅ Done |
-| 26 | CTAS — CREATE TABLE AS SELECT (Snapshot Tables) | ✅ Done |
-| 27 | Temp Tables — CREATE, DELETE, SELECT INTO | ✅ Done |
-| 28 | Indexes — CLUSTERED, NONCLUSTERED, Composite | ✅ Done |
-| 29 | Columnstore Index — HEAP vs RowStore vs ColumnStore | ✅ Done |
-| 30 | Indexes — UNIQUE & Filtered Index | ✅ Done |
-| 31 | Indexing Strategy — When to Use Which Index | ✅ Done |
-| 32 | Index Monitoring — Usage, Missing, Duplicate, Statistics, Fragmentation | ✅ Done |
-| 33 | Execution Plan & Query Hints | ✅ Done |
-| 34 | Indexing Strategy — Full Framework (4 Strategies) | ✅ Done |
-| 35 | Table Partitioning — Function, Filegroup, Scheme, Partitioned Table | ✅ Done |
-| 36 | Query Optimization Tips (Tip 1–30) | ✅ Done |
-| 37 | Stored Procedures — Parameters, Variables, IF ELSE, Error Handling | ✅ Done |
-| 38 | Triggers — DML Triggers (AFTER INSERT) | ✅ Done |
-| 39 | Using AI for SQL — Prompting Strategies | ✅ Done |
+| 1 | [Filtering & Aggregation — WHERE, GROUP BY, HAVING, TOP](#1-filtering--aggregation--where-group-by-having-top) | ✅ Done |
+| 2 | [DDL — CREATE, ALTER, DROP TABLE](#2-ddl--create-alter-drop-table) | ✅ Done |
+| 3 | [DML — INSERT, UPDATE, DELETE, TRUNCATE](#3-dml--insert-update-delete-truncate) | ✅ Done |
+| 4 | [Filtering Operators — AND, OR, NOT, BETWEEN, IN, LIKE](#4-filtering-operators--and-or-not-between-in-like) | ✅ Done |
+| 5 | [JOINs — INNER, LEFT, RIGHT, FULL](#5-joins--inner-left-right-full) | ✅ Done |
+| 6 | [Advanced JOINs — NULL Filtering & CROSS JOIN](#6-advanced-joins--null-filtering--cross-join) | ✅ Done |
+| 7 | [Multi-Table JOINs (3+ Tables)](#7-multi-table-joins-3-tables) | ✅ Done |
+| 8 | [Set Operators — UNION, UNION ALL, INTERSECT, EXCEPT](#8-set-operators--union-union-all-intersect-except) | ✅ Done |
+| 9 | [String Functions — CONCAT, LOWER, UPPER, TRIM, REPLACE, LEN, LEFT, RIGHT, SUBSTRING](#9-string-functions--concat-lower-upper-trim-replace-len-left-right-substring) | ✅ Done |
+| 10 | [Math Functions — ROUND, ABS](#10-math-functions--round-abs) | ✅ Done |
+| 11 | [Date Functions — DATETRUNC, EOMONTH, DATEPART, DATENAME, YEAR, MONTH, DAY](#11-date-functions--datetrunc-eomonth-datepart-datename-year-month-day) | ✅ Done |
+| 12 | [Date Formatting & Type Conversion — FORMAT, CONVERT, CAST](#12-date-formatting--type-conversion--format-convert-cast) | ✅ Done |
+| 13 | [Date Arithmetic — DATEADD, DATEDIFF, ISDATE](#13-date-arithmetic--dateadd-datediff-isdate) | ✅ Done |
+| 14 | [NULL Handling — COALESCE, NULLIF, IS NULL](#14-null-handling--coalesce-nullif-is-null) | ✅ Done |
+| 15 | [Data Quality & Cleaning — DATALENGTH, TRIM, Policy Patterns](#15-data-quality--cleaning--datalength-trim-policy-patterns) | ✅ Done |
+| 16 | [CASE WHEN — Conditional Logic & Conditional Aggregation](#16-case-when--conditional-logic--conditional-aggregation) | ✅ Done |
+| 17 | [Aggregate Functions — COUNT, SUM, AVG, MAX, MIN](#17-aggregate-functions--count-sum-avg-max-min) | ✅ Done |
+| 18 | [Window Functions — SUM OVER, RANK OVER, ROWS BETWEEN](#18-window-functions--sum-over-rank-over-rows-between) | ✅ Done |
+| 19 | [Window Functions — COUNT, AVG, MIN, MAX OVER (Real Project Patterns)](#19-window-functions--count-avg-min-max-over-real-project-patterns) | ✅ Done |
+| 20 | [Window Functions — ROW_NUMBER, RANK, DENSE_RANK, NTILE, CUME_DIST](#20-window-functions--row_number-rank-dense_rank-ntile-cume_dist) | ✅ Done |
+| 21 | [Window Functions — LAG, LEAD, FIRST_VALUE (Advanced Patterns)](#21-window-functions--lag-lead-first_value-advanced-patterns) | ✅ Done |
+| 22 | [Schema Exploration — INFORMATION_SCHEMA](#22-schema-exploration--information_schema) | ✅ Done |
+| 23 | [Subqueries — FROM, SELECT, WHERE, IN, ANY, EXISTS](#23-subqueries--from-select-where-in-any-exists) | ✅ Done |
+| 24 | [CTEs — Standalone, Chained & Recursive](#24-ctes--standalone-chained--recursive) | ✅ Done |
+| 25 | [Views — CREATE, DROP, JOIN Views](#25-views--create-drop-join-views) | ✅ Done |
+| 26 | [CTAS — CREATE TABLE AS SELECT (Snapshot Tables)](#26-ctas--create-table-as-select-snapshot-tables) | ✅ Done |
+| 27 | [Temp Tables — CREATE, DELETE, SELECT INTO](#27-temp-tables--create-delete-select-into) | ✅ Done |
+| 28 | [Indexes — CLUSTERED, NONCLUSTERED, Composite](#28-indexes--clustered-nonclustered-composite) | ✅ Done |
+| 29 | [Columnstore Index — HEAP vs RowStore vs ColumnStore](#29-columnstore-index--heap-vs-rowstore-vs-columnstore) | ✅ Done |
+| 30 | [Indexes — UNIQUE & Filtered Index](#30-indexes--unique--filtered-index) | ✅ Done |
+| 31 | [Indexing Strategy — When to Use Which Index](#31-indexing-strategy--when-to-use-which-index) | ✅ Done |
+| 32 | [Index Monitoring — Usage, Missing, Duplicate, Statistics, Fragmentation](#32-index-monitoring--usage-missing-duplicate-statistics-fragmentation) | ✅ Done |
+| 33 | [Execution Plan & Query Hints](#33-execution-plan--query-hints) | ✅ Done |
+| 34 | [Indexing Strategy — Full Framework (4 Strategies)](#34-indexing-strategy--full-framework-4-strategies) | ✅ Done |
+| 35 | [Table Partitioning — Function, Filegroup, Scheme, Partitioned Table](#35-table-partitioning--function-filegroup-scheme-partitioned-table) | ✅ Done |
+| 36 | [Query Optimization Tips (Tip 1–30)](#36-query-optimization-tips-tip-130) | ✅ Done |
+| 37 | [Stored Procedures — Parameters, Variables, IF ELSE, Error Handling](#37-stored-procedures--parameters-variables-if-else-error-handling) | ✅ Done |
+| 38 | [Triggers — DML Triggers (AFTER INSERT)](#38-triggers--dml-triggers-after-insert) | ✅ Done |
+| 39 | [Using AI for SQL — Prompting Strategies](#39-using-ai-for-sql--prompting-strategies) | ✅ Done |
+
+---
+
+> 🧠 **[Jump to Summary & Refresher](#-sql-domain-knowledge--summary--refresher)**
+
+---
 
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 1. Filtering & Aggregation — WHERE, GROUP BY, HAVING, TOP
 
@@ -73,6 +86,8 @@ order by order_date DESC;
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 2. DDL — CREATE, ALTER, DROP TABLE
 
@@ -102,6 +117,8 @@ DROP TABLE persons
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 3. DML — INSERT, UPDATE, DELETE, TRUNCATE
 
@@ -147,6 +164,8 @@ SELECT * FROM persons;
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 4. Filtering Operators — AND, OR, NOT, BETWEEN, IN, LIKE
 
@@ -197,6 +216,8 @@ OR first_name LIKE '%r%';
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 5. JOINs — INNER, LEFT, RIGHT, FULL
 
@@ -251,6 +272,8 @@ on c.id = o.customer_id;
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 6. Advanced JOINs — NULL Filtering & CROSS JOIN
 
@@ -308,6 +331,8 @@ CROSS JOIN orders;
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 7. Multi-Table JOINs (3+ Tables)
 
 ```sql
@@ -344,6 +369,8 @@ USE SalesDB
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 8. Set Operators — UNION, UNION ALL, INTERSECT, EXCEPT
 
@@ -429,6 +456,8 @@ ORDER BY OrderID;
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 9. String Functions — CONCAT, LOWER, UPPER, TRIM, REPLACE, LEN, LEFT, RIGHT, SUBSTRING
 
 ```sql
@@ -476,6 +505,8 @@ FROM customers;
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 10. Math Functions — ROUND, ABS
 
 ```sql
@@ -490,6 +521,8 @@ ABS(-10)
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 11. Date Functions — DATETRUNC, EOMONTH, DATEPART, DATENAME, YEAR, MONTH, DAY
 
@@ -542,6 +575,8 @@ WHERE MONTH(OrderDate) = 2;
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 12. Date Formatting & Type Conversion — FORMAT, CONVERT, CAST
 
@@ -598,6 +633,8 @@ SELECT
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 13. Date Arithmetic — DATEADD, DATEDIFF, ISDATE
 
@@ -671,6 +708,8 @@ FROM
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 14. NULL Handling — COALESCE, NULLIF, IS NULL
 
 ```sql
@@ -726,6 +765,8 @@ WHERE o.CustomerID IS NULL;
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 15. Data Quality & Cleaning — DATALENGTH, TRIM, Policy Patterns
 
 ```sql
@@ -747,6 +788,8 @@ FROM Orders;
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 16. CASE WHEN — Conditional Logic & Conditional Aggregation
 
@@ -830,6 +873,8 @@ GROUP BY CustomerID;
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 17. Aggregate Functions — COUNT, SUM, AVG, MAX, MIN
 
 ```sql
@@ -845,6 +890,8 @@ GROUP BY customer_id
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 18. Window Functions — SUM OVER, RANK OVER, ROWS BETWEEN
 
@@ -892,6 +939,8 @@ GROUP BY CustomerID;
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 19. Window Functions — COUNT, AVG, MIN, MAX OVER (Real Project Patterns)
 
@@ -1030,6 +1079,8 @@ FROM Sales.Orders
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 20. Window Functions — ROW_NUMBER, RANK, DENSE_RANK, NTILE, CUME_DIST
 
 ```sql
@@ -1131,6 +1182,8 @@ WHERE DistRank <= 0.4
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 21. Window Functions — LAG, LEAD, FIRST_VALUE (Advanced Patterns)
 
 ```sql
@@ -1179,6 +1232,8 @@ FROM Sales.Orders
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 22. Schema Exploration — INFORMATION_SCHEMA
 
 ```sql
@@ -1189,6 +1244,8 @@ FROM INFORMATION_SCHEMA.COLUMNS
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 23. Subqueries — FROM, SELECT, WHERE, IN, ANY, EXISTS
 
@@ -1292,6 +1349,8 @@ WHERE EXISTS(SELECT
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 24. CTEs — Standalone, Chained & Recursive
 
@@ -1405,6 +1464,8 @@ FROM CTE_Emp_Hierarchy
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 25. Views — CREATE, DROP, JOIN Views
 
 ```sql
@@ -1494,6 +1555,8 @@ CREATE VIEW Sales.V_Order_Details_EU AS (
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 26. CTAS — CREATE TABLE AS SELECT (Snapshot Tables)
 
 ```sql
@@ -1516,6 +1579,8 @@ GROUP BY DATENAME(month, OrderDate)
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 27. Temp Tables — CREATE, DELETE, SELECT INTO
 
 ```sql
@@ -1537,6 +1602,8 @@ FROM #Orders
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 28. Indexes — CLUSTERED, NONCLUSTERED, Composite
 
@@ -1568,6 +1635,8 @@ DROP INDEX idx_DBCustomers_CustomerID ON Sales.DBCustomers
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 29. Columnstore Index — HEAP vs RowStore vs ColumnStore
 
@@ -1606,6 +1675,8 @@ ON FactInternetSales_CS
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 30. Indexes — UNIQUE & Filtered Index
 
 ```sql
@@ -1633,6 +1704,8 @@ WHERE Country = 'USA'
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 31. Indexing Strategy — When to Use Which Index
 
 ```sql
@@ -1658,6 +1731,8 @@ Enforce Uniqueness, Improve Query Speed
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 32. Index Monitoring — Usage, Missing, Duplicate, Statistics, Fragmentation
 
@@ -1785,6 +1860,8 @@ ALTER INDEX idx_Customers_Country ON Sales.Customers REBUILD
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 33. Execution Plan & Query Hints
 
 ```sql
@@ -1808,6 +1885,8 @@ ON o.CustomerID = c.CustomerID
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 34. Indexing Strategy — Full Framework (4 Strategies)
 
@@ -1878,6 +1957,8 @@ in ordeer to monitor it's health or using other tools that more advance
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 35. Table Partitioning — Function, Filegroup, Scheme, Partitioned Table
 
@@ -1995,6 +2076,8 @@ WHERE OBJECT_NAME(p.object_id) = 'Order_Partitioned';
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 36. Query Optimization Tips (Tip 1–30)
 
@@ -2177,6 +2260,8 @@ ON CustomersInfo(EmployeeID)
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 37. Stored Procedures — Parameters, Variables, IF ELSE, Error Handling
 
 ```sql
@@ -2259,6 +2344,8 @@ EXEC GetCustomerSummary @Country = 'Germany'
 
 ---
 
+> [↑ Back to top](#-progress-tracker)
+
 ## 38. Triggers — DML Triggers (AFTER INSERT)
 
 ```sql
@@ -2296,6 +2383,8 @@ VALUES
 ```
 
 ---
+
+> [↑ Back to top](#-progress-tracker)
 
 ## 39. Using AI for SQL — Prompting Strategies
 
